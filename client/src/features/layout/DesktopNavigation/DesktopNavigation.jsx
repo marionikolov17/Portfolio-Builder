@@ -13,6 +13,7 @@ export default function DesktopNavigation() {
                 </div>
                 {/* Buttons */}
                 <NavigationButton icon="builder" link="" text={"Builder"} isActive={true}/>
+                <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
                 <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
             </section>
