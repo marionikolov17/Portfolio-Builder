@@ -18,7 +18,7 @@ export default function TopBar() {
                 <div className="shrink-0 grow flex items-center justify-center sm:justify-end sm:px-8">
                     {/* Notifications */}
                     <div className="flex flex-col items-center h-full relative">
-                        <div className="relative p-3 bg-secondaryYellow rounded-lg cursor-pointer">
+                        <div className="relative p-3 bg-secondaryYellow hover:bg-gray-100 rounded-lg cursor-pointer">
                             <div className="absolute right-0 top-0 m-2 w-2 h-2 bg-strongRed rounded-full"></div>
                             <IoNotificationsOutline className="text-supportingYellow text-2xl"/>
                         </div>
