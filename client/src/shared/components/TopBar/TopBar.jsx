@@ -39,7 +39,7 @@ export default function TopBar({ pageName }) {
                             <p className="text-sm text-slate-400"><span className="text-primaryBlue">@</span>marionikolov</p>
                         </div>
                     </div>
-                    <IoMenuOutline className="flex sm:hidden text-3xl"/>
+                    <IoMenuOutline className="flex text-3xl"/>
                 </div>
             </div>
         </>
