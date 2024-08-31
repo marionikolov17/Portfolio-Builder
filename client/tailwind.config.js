@@ -7,6 +7,11 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        mainBackground: "#E8E8E8",
+        primaryBlue: "#5D5FEF",
+        blueGray: "#737791"
+      },
       fontFamily: {
         montserrat: "'Montserrat', sans-serif",
       }

@@ -4,7 +4,7 @@ import DesktopNavigation from "../../features/layout/DesktopNavigation/DesktopNa
 export default function Layout() {
     return (
         <>
-            <main className="w-full min-h-full overflow-x-hidden absolute font-montserrat flex">
+            <main className="w-full min-h-full overflow-x-hidden absolute font-montserrat flex bg-mainBackground">
                 <DesktopNavigation />
                 <Outlet />
             </main>
