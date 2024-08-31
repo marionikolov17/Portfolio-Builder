@@ -1,5 +1,6 @@
 import { IoCloseOutline } from "react-icons/io5";
 import NavigationButton from "../NavigationButton/NavigationButton";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
     return (
@@ -20,6 +21,9 @@ export default function Navigation() {
                 <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
                 <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
+                <div className="absolute bottom-0 mb-4 flex sm:hidden lg:flex justify-center">
+                    <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>
+                </div>
             </section>
         </>
     )
