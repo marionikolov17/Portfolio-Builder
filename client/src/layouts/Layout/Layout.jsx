@@ -5,7 +5,7 @@ export default function Layout() {
     return (
         <>
             <main className="w-full min-h-full overflow-x-hidden absolute font-montserrat flex bg-mainBackground">
-                {/* <Navigation /> */}
+                <Navigation />
                 <Outlet />
             </main>
         </>
