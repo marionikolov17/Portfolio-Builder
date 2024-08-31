@@ -4,7 +4,7 @@ import NavigationButton from "../NavigationButton/NavigationButton";
 export default function Navigation() {
     return (
         <>
-            <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative">
+            <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative z-40">
                 <div className="w-full flex sm:hidden justify-end py-4 px-4">
                     <IoCloseOutline className="text-3xl"/>
                 </div>
