@@ -1,6 +1,6 @@
 import { IoAnalyticsOutline, IoBuildOutline, IoLogOutOutline, IoSettingsOutline } from "react-icons/io5";
 
-const className = "text-2xl ms-4";
+const className = "text-2xl ms-4 sm:ms-0 lg:ms-4";
 
 export const navIcons = {
     'builder': <IoBuildOutline className={className}/>,

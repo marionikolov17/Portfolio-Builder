@@ -7,12 +7,12 @@ export default function NavigationButton({ isActive, link, icon, text }) {
     <>
       <Link to={link} className={
         isActive ?
-        "flex items-center bg-primaryBlue w-56 h-12 rounded-lg text-white mb-6"
+        "nav-button-active"
         :
-        "flex items-center w-56 h-12 rounded-lg text-blueGray mb-6 hover:bg-gray-100"
+        "nav-button-inactive"
       }>
         {navIcons[icon]}
-        <p className="ms-4 text-base">{text}</p>
+        <p className="ms-4 text-base flex sm:hidden lg:flex">{text}</p>
       </Link>
     </>
   );
