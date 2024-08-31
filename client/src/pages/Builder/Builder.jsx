@@ -4,7 +4,7 @@ export default function Builder() {
     return (
         <>
             <section className="grow min-h-full">
-                <TopBar />
+                <TopBar pageName="Builder"/>
             </section>
         </>
     )

@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { IoMenuOutline, IoNotificationsOutline, IoSearchOutline } from "react-icons/io5";
 
-export default function TopBar() {
+export default function TopBar({ pageName }) {
     return (
         <>
             <div className="w-full h-20 sm:h-[120px] bg-white flex items-center relative">
                 <div className="shrink grow hidden sm:flex justify-start items-center">
-                    <h1 className="ms-8 font-bold text-3xl">Builder</h1>
+                    <h1 className="ms-8 font-bold text-3xl">{pageName}</h1>
                 </div>
                 {/* <div className="shrink-0 grow flex items-center justify-center">
                     <div className="flex w-full items-center bg-primaryGray rounded-lg shadow-sm">
