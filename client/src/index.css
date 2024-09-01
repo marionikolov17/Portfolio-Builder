@@ -3,28 +3,38 @@
 @tailwind utilities;
 
 @layer utilities {
-    .flicker-animation {
-        animation: flickering 0.8s ease infinite;
-    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .flicker-animation {
+    animation: flickering 0.8s ease infinite;
+  }
 
-    @keyframes flickering {
-        0% {
-            opacity: 100%;
-        }
-        50% {
-            opacity: 50%;
-        }
-        100% {
-            opacity: 100%;
-        }
+  @keyframes flickering {
+    0% {
+      opacity: 100%;
     }
+    50% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
 }
 
 @layer components {
-    .nav-button-active {
-        @apply flex items-center justify-start sm:justify-center lg:justify-start bg-primaryBlue sm:bg-transparent lg:bg-primaryBlue w-56 sm:w-full lg:w-56 h-12 rounded-lg text-white sm:text-primaryBlue lg:text-white mb-6
-    }
-    .nav-button-inactive {
-        @apply flex items-center justify-start sm:justify-center lg:justify-start w-56 sm:w-full lg:w-56 h-12 rounded-lg text-blueGray mb-6 hover:bg-gray-100 sm:hover:bg-transparent lg:hover:bg-gray-100
-    }
+  .nav-button-active {
+    @apply flex items-center justify-start sm:justify-center lg:justify-start bg-primaryBlue sm:bg-transparent lg:bg-primaryBlue w-56 sm:w-full lg:w-56 h-12 rounded-lg text-white sm:text-primaryBlue lg:text-white mb-6;
+  }
+  .nav-button-inactive {
+    @apply flex items-center justify-start sm:justify-center lg:justify-start w-56 sm:w-full lg:w-56 h-12 rounded-lg text-blueGray mb-6 hover:bg-gray-100 sm:hover:bg-transparent lg:hover:bg-gray-100;
+  }
 }

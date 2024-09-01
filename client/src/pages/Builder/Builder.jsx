@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import ChooseTemplates from "../../features/builder/ChooseTemplates/ChooseTemplates";
 import TopBar from "../../shared/components/TopBar/TopBar";
+import StandartTheme from "../../themes/standart/StandartTheme";
 
 export default function Builder() {
     return (
@@ -8,7 +10,9 @@ export default function Builder() {
                 <TopBar pageName="Builder"/>
                 <div className="w-full">
                     {/* Templates choosing */}
-                    <ChooseTemplates />
+                    {/* <ChooseTemplates /> */}
+                    {/* Actual Theme editing */}
+                    <StandartTheme />
                 </div>
             </section>
         </>
