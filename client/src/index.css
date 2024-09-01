@@ -37,4 +37,8 @@
   .nav-button-inactive {
     @apply flex items-center justify-start sm:justify-center lg:justify-start w-56 sm:w-full lg:w-56 h-12 rounded-lg text-blueGray mb-6 hover:bg-gray-100 sm:hover:bg-transparent lg:hover:bg-gray-100;
   }
+
+  .floating-label {
+    @apply absolute transition-all duration-300 top-0 -translate-y-2 scale-75 text-primaryBlue bg-mainBackground peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-slate-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:top-3 ms-4 text-sm peer-focus:top-0 peer-focus:-translate-y-2 z-50 peer-focus:bg-mainBackground px-2 peer-focus:scale-75 peer-focus:text-primaryBlue
+  }
 }
