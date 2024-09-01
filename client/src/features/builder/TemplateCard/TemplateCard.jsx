@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function TemplateCard() {
     return (
         <>
-            <div className="w-96 h-96 overflow-hidden rounded-lg">
+            <div className="w-full sm:w-96 h-96 mb-4 overflow-hidden rounded-lg">
                 {/* Image */}
                 <div className="w-full h-56 flex justify-center overflow-hidden">
                     <img src="/images/test1.png" className="object-cover" alt="template image" />
