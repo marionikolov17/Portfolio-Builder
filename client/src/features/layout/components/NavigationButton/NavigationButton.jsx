@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import { navIcons } from "../../../shared/data/navigation-icons";
+import { navIcons } from "../../../../shared/data/navigation-icons";
 
 export default function NavigationButton({ isActive, link, icon, text }) {
   return (

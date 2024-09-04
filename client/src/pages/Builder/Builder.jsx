@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import ChooseTemplates from "../../features/builder/ChooseTemplates/ChooseTemplates";
+import ChooseTemplates from "../../features/builder/components/ChooseTemplates/ChooseTemplates";
 import TopBar from "../../shared/components/TopBar/TopBar";
 import StandartTheme from "../../themes/standart/StandartTheme";
 

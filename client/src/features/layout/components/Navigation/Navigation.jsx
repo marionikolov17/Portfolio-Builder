@@ -2,7 +2,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import NavigationButton from "../NavigationButton/NavigationButton";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import LayoutContext from "../../../layouts/Layout/layout.context";
+import LayoutContext from "../../../../layouts/Layout/layout.context";
 
 export default function Navigation() {
     const { setIsNavigationOpened } = useContext(LayoutContext);

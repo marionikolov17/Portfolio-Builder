@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
-import Navigation from "../../features/layout/Navigation/Navigation";
+import Navigation from "../../features/layout/components/Navigation/Navigation";
 import LayoutContext from "./layout.context";
 
 export default function Layout() {
