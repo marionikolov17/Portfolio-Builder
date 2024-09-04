@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
     return (
         <>
-            <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative z-40">
+            <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative z-50">
                 <div className="w-full flex sm:hidden justify-end py-4 px-4">
                     <IoCloseOutline className="text-3xl"/>
                 </div>
@@ -21,7 +21,7 @@ export default function Navigation() {
                 <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
                 <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
-                <div className="absolute bottom-0 mb-4 flex sm:hidden lg:flex justify-center">
+                <div className="mt-8 flex sm:hidden lg:flex justify-center">
                     <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>
                 </div>
             </section>

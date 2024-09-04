@@ -1,10 +1,14 @@
-import { MdOutlineWorkOutline } from "react-icons/md";
+import { MdDone, MdOutlineWorkOutline } from "react-icons/md";
+import { CiCirclePlus } from "react-icons/ci";
+import { SiReact } from "react-icons/si";
+import { IoCloseOutline } from "react-icons/io5";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function HeroSectionStandart() {
   return (
     <>
       {/* Hero section */}
-      <div className="w-full flex items-center bg-white rounded-lg mt-8 shadow-sm">
+      <div className="w-full flex items-center bg-white rounded-lg mt-8 shadow-sm z-20">
         <div className="grow flex justify-start px-4 py-3">
           <h2 className="text-xl font-bold">Hero Section</h2>
         </div>
@@ -19,7 +23,7 @@ export default function HeroSectionStandart() {
         </div>
       </div>
       {/* First and Last names */}
-      <div className="mt-8 max-h-max flex flex-wrap">
+      <div className="mt-8 max-h-max flex sm:justify-start justify-center flex-wrap">
         <div className="relative py-1 me-4">
           <input
             type="text"
@@ -27,7 +31,7 @@ export default function HeroSectionStandart() {
             className="peer placeholder:text-transparent outline-none block bg-transparent border-gray-300 shadow-sm rounded-lg py-1.5 px-4 border focus:ring-1 focus:ring-primaryBlue transition duration-300"
             placeholder="First"
           />
-          <label htmlFor="firstName" className="floating-label">
+          <label htmlFor="firstName" className="floating-label z-10">
             First Name
           </label>
         </div>
@@ -38,7 +42,7 @@ export default function HeroSectionStandart() {
             className="peer placeholder:text-transparent outline-none block bg-transparent border-gray-300 shadow-sm rounded-lg py-1.5 px-4 border focus:ring-1 focus:ring-primaryBlue transition duration-300"
             placeholder="First"
           />
-          <label htmlFor="lastName" className="floating-label">
+          <label htmlFor="lastName" className="floating-label z-10">
             Last Name
           </label>
         </div>
@@ -48,21 +52,94 @@ export default function HeroSectionStandart() {
         <label htmlFor="" className="font-medium">
           Your Role
         </label>
-        <div className="relative flex items-center flex-wrap mt-2">
-          <div className="absolute top-0 h-full flex items-center">
-            <MdOutlineWorkOutline className="text-xl ms-3" />
+        <div className="flex sm:flex-row flex-col items-center flex-wrap mt-2">
+          <div className="bg-white rounded-lg shadow-sm flex items-center">
+            <div className="flex h-full items-center">
+              <MdOutlineWorkOutline className="text-xl ms-3" />
+            </div>
+            <input
+              type="text"
+              placeholder="e.g Javascript Web Developer"
+              className="w-80 py-2 px-4 outline-none bg-transparent"
+            />
           </div>
-          <input
-            type="text"
-            placeholder="e.g Javascript Web Developer"
-            className="w-80 py-2 ps-10 pe-2 rounded-lg shadow-sm outline-none"
-          />
-          <p className="text-base ms-4 underline underline-offset-2 font-medium">
+          {/* <p className="text-base ms-4 underline underline-offset-2 font-medium">
             It is not necessary to be your job, type what you love!
-          </p>
+          </p> */}
         </div>
       </div>
       {/* Tech Stack */}
+      <div className="mt-6">
+        <h3 className="font-medium text-base">Tech Stack</h3>
+        {/* Selected technologies */}
+        <div className="flex items-center flex-wrap mt-4">
+          {/* Technology container */}
+          <div className="relative p-4 me-2">
+            <SiReact className="text-3xl text-[#61dbfb]" />
+            <IoCloseOutline className="absolute top-0 right-0 cursor-pointer bg-strongRed rounded-full text-white text-sm" />
+          </div>
+        </div>
+        <div className="flex flex-col items-center sm:items-start">
+          <div className="flex mt-4 bg-white max-w-max items-center px-4 rounded-lg shadow-sm">
+            <input
+              type="text"
+              placeholder="Type to view options..."
+              className="py-3 bg-transparent outline-none text-sm"
+            />
+            <button>
+              <CiCirclePlus className="text-xl" />
+            </button>
+          </div>
+          {/* Options */}
+          <div className="w-[220px] min-h-10 bg-white mt-1 rounded-lg overflow-x-hidden">
+            {/* Option Item */}
+            <div className="w-full flex items-center px-4 py-3 hover:bg-gray-100 cursor-pointer">
+              <SiReact className="text-2xl text-[#61dbfb]" />
+              <p className="ms-2 font-bold text-sm">React</p>
+            </div>
+            <div className="w-full flex items-center px-4 py-3 hover:bg-gray-100 cursor-pointer">
+              <SiReact className="text-2xl text-[#61dbfb]" />
+              <p className="ms-2 font-bold text-sm">React</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Socials */}
+      <div className="mt-6">
+            <h3 className="font-medium text-base mb-4">Your Socials</h3>
+            {/* Social Media Container */}
+            <div className="flex items-center mt-2"> {/* Github */}
+              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+                <FaGithub className="ms-4 text-xl"/>
+                <input type="text" placeholder="Enter valid URL" name="githubSocial" className="py-2 px-4 outline-none grow text-sm" />
+              </div>
+              <MdDone className="ms-2 text-xl text-green-500"/> {/* Show icons for validating link */}
+            </div>
+            {/* Social Media Container */}
+            <div className="flex items-center mt-2"> {/* Linkedin */}
+              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+                <FaLinkedin className="ms-4 text-xl"/>
+                <input type="text" placeholder="Enter valid URL" name="linkedinSocial" className="py-2 px-4 outline-none grow text-sm" />
+              </div>
+              <MdDone className="ms-2 text-xl text-green-500"/> {/* Show icons for validating link */}
+            </div>
+            {/* Social Media Container */}
+            <div className="flex items-center mt-2"> {/* Instagram */}
+              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+                <FaInstagram className="ms-4 text-xl"/>
+                <input type="text" placeholder="Enter valid URL" name="instagramSocial" className="py-2 px-4 outline-none grow text-sm" />
+              </div>
+              <MdDone className="ms-2 text-xl text-green-500"/> {/* Show icons for validating link */}
+            </div>
+            {/* Social Media Container */}
+            <div className="flex items-center mt-2"> {/* Facebook */}
+              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+                <FaFacebook className="ms-4 text-xl"/>
+                <input type="text" placeholder="Enter valid URL" name="facebookSocial" className="py-2 px-4 outline-none grow text-sm" />
+              </div>
+              <MdDone className="ms-2 text-xl text-green-500"/> {/* Show icons for validating link */}
+            </div>
+      </div>
     </>
   );
 }
