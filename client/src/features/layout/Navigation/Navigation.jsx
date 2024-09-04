@@ -1,13 +1,16 @@
 import { IoCloseOutline } from "react-icons/io5";
 import NavigationButton from "../NavigationButton/NavigationButton";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import LayoutContext from "../../../layouts/Layout/layout.context";
 
 export default function Navigation() {
+    const { setIsNavigationOpened } = useContext(LayoutContext);
     return (
         <>
             <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative z-50">
                 <div className="w-full flex sm:hidden justify-end py-4 px-4">
-                    <IoCloseOutline className="text-3xl"/>
+                    <IoCloseOutline className="text-3xl" onClick={() => setIsNavigationOpened(false)}/>
                 </div>
                 {/* Logo */}
                 <div className="flex items-center mt-4 mb-10 sm:mt-10">

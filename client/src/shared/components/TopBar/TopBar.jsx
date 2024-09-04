@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
+import { useContext } from "react";
 import { IoMenuOutline, IoNotificationsOutline, IoSearchOutline } from "react-icons/io5";
+import LayoutContext from "../../../layouts/Layout/layout.context";
 
 export default function TopBar({ pageName }) {
+    const { setIsNavigationOpened } = useContext(LayoutContext);
     return (
         <>
             <div className="w-full h-20 sm:h-[120px] bg-white flex items-center relative">
@@ -39,7 +42,7 @@ export default function TopBar({ pageName }) {
                             <p className="text-sm text-slate-400"><span className="text-primaryBlue">@</span>marionikolov</p>
                         </div>
                     </div>
-                    <IoMenuOutline className="flex text-3xl cursor-pointer"/>
+                    <IoMenuOutline className="flex text-3xl cursor-pointer" onClick={() => setIsNavigationOpened(value => !value)}/>
                 </div>
             </div>
         </>
