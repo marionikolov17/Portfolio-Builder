@@ -1,4 +1,4 @@
-import { MdDone, MdOutlineWorkOutline } from "react-icons/md";
+import { MdDone, MdOutlineWorkOutline, MdAddAPhoto } from "react-icons/md";
 import { CiCirclePlus } from "react-icons/ci";
 import { SiReact } from "react-icons/si";
 import { IoCloseOutline } from "react-icons/io5";
@@ -21,6 +21,15 @@ export default function HeroSectionStandart() {
             </span>
           </label>
         </div>
+      </div>
+      {/* Picture */}
+      <div className="mt-8 flex flex-col items-center justify-center">
+        <div className="w-48 h-48 sm:w-60 sm:h-60 overflow-hidden relative flex justify-center bg-white shadow-sm rounded-full">
+        </div>
+        <button className="mt-8 py-2 px-4 bg-white rounded-lg shadow-sm hover:bg-gray-100 flex items-center">
+          Change Picture 
+          <MdAddAPhoto className="ms-2 text-xl"/>
+        </button>
       </div>
       {/* First and Last names */}
       <div className="mt-8 max-h-max flex sm:justify-start justify-center flex-wrap">
