@@ -6,7 +6,7 @@ import StandartTheme from "../../themes/standart/StandartTheme";
 export default function Builder() {
     return (
         <>
-            <section className="grow min-h-full pb-10">
+            <section className="grow max-w-full min-h-full pb-10">
                 <TopBar pageName="Builder"/>
                 <div className="w-full">
                     {/* Templates choosing */}

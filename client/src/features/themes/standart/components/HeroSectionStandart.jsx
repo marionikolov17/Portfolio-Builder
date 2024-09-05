@@ -53,14 +53,14 @@ export default function HeroSectionStandart() {
           Your Role
         </label>
         <div className="flex sm:flex-row flex-col items-center flex-wrap mt-2">
-          <div className="bg-white rounded-lg shadow-sm flex items-center">
+          <div className="bg-white w-full sm:w-auto rounded-lg shadow-sm flex items-center">
             <div className="flex h-full items-center">
               <MdOutlineWorkOutline className="text-xl ms-3" />
             </div>
             <input
               type="text"
               placeholder="e.g Javascript Web Developer"
-              className="w-80 py-2 px-4 outline-none bg-transparent"
+              className="w-full sm:w-80 py-2 px-4 outline-none bg-transparent"
             />
           </div>
           {/* <p className="text-base ms-4 underline underline-offset-2 font-medium">
@@ -105,7 +105,7 @@ export default function HeroSectionStandart() {
         </div>
       </div>
       {/* Socials */}
-      <div className="mt-6">
+      <div className="mt-6 flex flex-col items-center sm:items-start">
             <h3 className="font-medium text-base mb-4">Your Socials</h3>
             {/* Social Media Container */}
             <div className="flex items-center mt-2"> {/* Github */}
