@@ -10,7 +10,7 @@ export default function HeroSectionStandart() {
       {/* Hero section */}
       <div className="w-full flex items-center bg-white rounded-lg mt-8 shadow-sm z-20">
         <div className="grow flex justify-start px-4 py-3">
-          <h2 className="text-xl font-bold">Hero Section</h2>
+          <h2 className="sm:text-xl font-bold">Hero Section</h2>
         </div>
         <div className="grow flex justify-end px-4 py-3">
           <label className="inline-flex items-center cursor-pointer">
@@ -118,7 +118,7 @@ export default function HeroSectionStandart() {
             <h3 className="font-medium text-base mb-4">Your Socials</h3>
             {/* Social Media Container */}
             <div className="flex items-center mt-2"> {/* Github */}
-              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+              <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
                 <FaGithub className="ms-4 text-xl"/>
                 <input type="text" placeholder="Enter valid URL" name="githubSocial" className="py-2 px-4 outline-none grow text-sm" />
               </div>
@@ -126,7 +126,7 @@ export default function HeroSectionStandart() {
             </div>
             {/* Social Media Container */}
             <div className="flex items-center mt-2"> {/* Linkedin */}
-              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+              <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
                 <FaLinkedin className="ms-4 text-xl"/>
                 <input type="text" placeholder="Enter valid URL" name="linkedinSocial" className="py-2 px-4 outline-none grow text-sm" />
               </div>
@@ -134,7 +134,7 @@ export default function HeroSectionStandart() {
             </div>
             {/* Social Media Container */}
             <div className="flex items-center mt-2"> {/* Instagram */}
-              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+              <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
                 <FaInstagram className="ms-4 text-xl"/>
                 <input type="text" placeholder="Enter valid URL" name="instagramSocial" className="py-2 px-4 outline-none grow text-sm" />
               </div>
@@ -142,7 +142,7 @@ export default function HeroSectionStandart() {
             </div>
             {/* Social Media Container */}
             <div className="flex items-center mt-2"> {/* Facebook */}
-              <div className="flex items-center bg-white rounded-lg w-80 overflow-x-hidden shadow-sm">
+              <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
                 <FaFacebook className="ms-4 text-xl"/>
                 <input type="text" placeholder="Enter valid URL" name="facebookSocial" className="py-2 px-4 outline-none grow text-sm" />
               </div>
