@@ -6,7 +6,7 @@ import { SiReact } from "react-icons/si";
 export default function Project() {
     return (
         <>
-            <div className="mt-8 w-full sm:w-[70%] min-h-14 bg-white rounded-lg shadow overflow-hidden">
+            <div className="mt-8 w-full lg:w-[70%] min-h-14 bg-white rounded-lg shadow overflow-hidden">
                 {/* Header info and action buttons */}
                 <div className="h-14 flex items-center">
                     {/* Image and Title */}
@@ -84,7 +84,7 @@ export default function Project() {
                                 </div>
                             </div>
                             {/* Add new field */}
-                            <div className="w-full flex justify-center">
+                            <div className="w-full flex justify-center mt-2">
                                 <button type="button" className="flex items-center py-2 px-4 border rounded-lg hover:bg-gray-100 hover:text-primaryBlue">
                                     <IoAddOutline className="text-xl me-2"/>
                                     Add new field
