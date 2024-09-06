@@ -1,5 +1,6 @@
 import AboutSectionStandart from "../../features/themes/standart/components/AboutSectionStandart/AboutSectionStandart";
 import HeroSectionStandart from "../../features/themes/standart/components/HeroSectionStandart/HeroSectionStandart";
+import ProjectSectionStandard from "../../features/themes/standart/components/ProjectSectionStandard/ProjectSectionStandard";
 
 export default function StandartTheme() {
   return (
@@ -8,6 +9,7 @@ export default function StandartTheme() {
         <h1 className="mt-8 text-xl sm:text-3xl font-bold">Edit your portfolio</h1>
         <HeroSectionStandart />
         <AboutSectionStandart />
+        <ProjectSectionStandard />
       </div>
     </>
   );
