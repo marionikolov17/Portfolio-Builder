@@ -1,4 +1,4 @@
-import { CiCirclePlus, CiEdit } from "react-icons/ci";
+import { CiCirclePlus, CiEdit, CiImageOn } from "react-icons/ci";
 import { IoAddOutline, IoCloseOutline } from "react-icons/io5";
 import { MdOutlineDelete, MdOutlineDragIndicator } from "react-icons/md";
 import { SiReact } from "react-icons/si";
@@ -89,6 +89,14 @@ export default function Project() {
                                     <IoAddOutline className="text-xl me-2"/>
                                     Add new field
                                 </button>
+                            </div>
+                        </div>
+                        {/* Project Thumbnail */}
+                        <div className="mt-4">
+                            <h4 className="font-bold">Thumbnail</h4>
+                            <div className="mt-2 h-32 w-32 border border-gray-900/25 border-dashed rounded-lg flex flex-col items-center justify-center">
+                                <CiImageOn className="text-3xl"/>
+                                <label htmlFor="" className="text-primaryBlue text-sm font-bold mt-2 cursor-pointer">Upload a file</label>
                             </div>
                         </div>
                     </form>
