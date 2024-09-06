@@ -24,6 +24,50 @@ export default function Project() {
                         <MdOutlineDragIndicator className="text-3xl mx-2 cursor-pointer text-slate-400"/>
                     </div>
                 </div>
+                {/* Project Edit information */}
+                <div className="w-full">
+                    <form className="w-full px-4 pb-4">
+                        {/* Project Header information */}
+                        <div className="w-full flex gap-y-1 flex-wrap">
+                            {/* Project Name */}
+                            <div className="mt-4">
+                                <label htmlFor="" className="block text-base font-medium">Project Name</label>
+                                <input type="text" placeholder="e.g Awesome Project" className="mt-1 outline-none border py-2 px-4 rounded-lg text-base"/>
+                            </div>
+                            {/* Project short description */}
+                            <div className="mt-4 grow w-full">
+                                <label htmlFor="" className="block text-base font-medium">Short Description</label>
+                                <input 
+                                    type="text" 
+                                    placeholder="e.g Incoming app that will help people." 
+                                    className="mt-1 w-full outline-none border py-2 px-4 rounded-lg text-base"
+                                />
+                            </div>
+                            {/* Project Github URL */}
+                            <div className="mt-4 grow">
+                                <label htmlFor="" className="block text-base font-medium">Github URL</label>
+                                <input 
+                                    type="text" 
+                                    placeholder="You can leave it empty." 
+                                    className="mt-1 w-full outline-none border py-2 px-4 rounded-lg text-base"
+                                />
+                            </div>
+                            {/* Project Demo URL */}
+                            <div className="mt-4 ms-4 grow">
+                                <label htmlFor="" className="block text-base font-medium">Demo URL</label>
+                                <input 
+                                    type="text" 
+                                    placeholder="You can leave it empty." 
+                                    className="mt-1 w-full outline-none border py-2 px-4 rounded-lg text-base"
+                                />
+                            </div>
+                        </div>
+                        {/* Project tech stack */}
+                        <div className="w-full mt-4">
+                            <h4 className="font-bold">Tech Stack</h4>
+                        </div>
+                    </form>
+                </div>
             </div>
         </>
     )

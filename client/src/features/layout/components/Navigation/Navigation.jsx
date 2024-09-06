@@ -8,7 +8,7 @@ export default function Navigation() {
     const { setIsNavigationOpened } = useContext(LayoutContext);
     return (
         <>
-            <section className="w-full sm:w-[90px] lg:w-80 min-h-full shrink-0 bg-white flex flex-col items-center fixed top-0 sm:relative z-50">
+            <section className="w-full sm:w-[90px] lg:w-80 h-screen shrink-0 bg-white flex flex-col items-center fixed top-0 sm:sticky z-50">
                 <div className="w-full flex sm:hidden justify-end py-4 px-4">
                     <IoCloseOutline className="text-3xl" onClick={() => setIsNavigationOpened(false)}/>
                 </div>
@@ -24,7 +24,7 @@ export default function Navigation() {
                 <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
                 <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
-                <div className="mt-8 flex sm:hidden lg:flex justify-center">
+                <div className="mb-4 flex sm:hidden lg:flex justify-center absolute bottom-0">
                     <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>
                 </div>
             </section>

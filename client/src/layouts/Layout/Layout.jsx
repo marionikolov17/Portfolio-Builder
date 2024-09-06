@@ -12,7 +12,7 @@ export default function Layout() {
                 setIsNavigationOpened
             }}
         >
-            <main className="w-full min-h-full overflow-x-hidden absolute font-montserrat flex bg-mainBackground">
+            <main className="w-full min-h-full absolute font-montserrat flex bg-mainBackground">
                 {isNavigationOpened && <Navigation />}
                 <Outlet />
             </main>
