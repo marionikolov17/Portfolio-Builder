@@ -1,5 +1,7 @@
-import { CiEdit } from "react-icons/ci";
+import { CiCirclePlus, CiEdit } from "react-icons/ci";
+import { IoAddOutline, IoCloseOutline } from "react-icons/io5";
 import { MdOutlineDelete, MdOutlineDragIndicator } from "react-icons/md";
+import { SiReact } from "react-icons/si";
 
 export default function Project() {
     return (
@@ -65,6 +67,29 @@ export default function Project() {
                         {/* Project tech stack */}
                         <div className="w-full mt-4">
                             <h4 className="font-bold">Tech Stack</h4>
+                            {/* Added field */}
+                            <div className="w-full flex flex-wrap items-center mt-4">
+                                <input type="text" placeholder="e.g Front-End" className="outline-none py-2 px-4 border rounded-lg" />
+                                <CiCirclePlus className="text-3xl ms-4 cursor-pointer hover:text-primaryBlue"/>
+                                {/* Selected */}
+                                {/* Technology container */}
+                                <div className="relative p-4">
+                                    <SiReact className="text-3xl text-[#61dbfb]" />
+                                    <IoCloseOutline className="absolute top-0 right-0 cursor-pointer bg-strongRed rounded-full text-white text-sm" />
+                                </div>
+                                {/* Technology container */}
+                                <div className="relative p-4">
+                                    <SiReact className="text-3xl text-[#61dbfb]" />
+                                    <IoCloseOutline className="absolute top-0 right-0 cursor-pointer bg-strongRed rounded-full text-white text-sm" />
+                                </div>
+                            </div>
+                            {/* Add new field */}
+                            <div className="w-full flex justify-center">
+                                <button type="button" className="flex items-center py-2 px-4 border rounded-lg hover:bg-gray-100 hover:text-primaryBlue">
+                                    <IoAddOutline className="text-xl me-2"/>
+                                    Add new field
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
