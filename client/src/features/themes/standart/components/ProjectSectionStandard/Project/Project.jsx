@@ -31,7 +31,7 @@ export default function Project() {
                 <div className="w-full">
                     <form className="w-full px-4 pb-4">
                         {/* Project Header information */}
-                        <div className="w-full flex flex-wrap">
+                        <div className="w-full flex flex-wrap gap-x-4">
                             {/* Project Name */}
                             <div className="mt-4">
                                 <label htmlFor="" className="block text-base font-medium">Project Name</label>
@@ -56,7 +56,7 @@ export default function Project() {
                                 />
                             </div>
                             {/* Project Demo URL */}
-                            <div className="mt-4 ms-4 grow">
+                            <div className="mt-4 grow">
                                 <label htmlFor="" className="block text-base font-medium">Demo URL</label>
                                 <input 
                                     type="text" 
@@ -69,7 +69,7 @@ export default function Project() {
                         <div className="w-full mt-4">
                             <h4 className="font-bold">Tech Stack</h4>
                             {/* Added field */}
-                            <div className="w-full flex flex-wrap items-center mt-4">
+                            <div className="w-full flex flex-wrap gap-y-2 items-center mt-4">
                                 <input type="text" placeholder="e.g Front-End" className="outline-none py-2 px-4 border rounded-lg" />
                                 <CiCirclePlus className="text-3xl ms-4 cursor-pointer hover:text-primaryBlue"/>
                                 {/* Selected */}
@@ -127,7 +127,7 @@ export default function Project() {
                                     placeholder="e.g Complex user authentication"
                                     type="text" 
                                 />
-                                <div className="h-full w-14 flex items-center justify-center p-2">
+                                <div className="h-full sm:w-14 flex items-center justify-center p-2">
                                     <MdOutlineDelete className="text-strongRed cursor-pointer text-2xl"/>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@ export default function Project() {
                                     placeholder="e.g Polished my React skills"
                                     type="text" 
                                 />
-                                <div className="h-full w-14 flex items-center justify-center p-2">
+                                <div className="h-full sm:w-14 flex items-center justify-center p-2">
                                     <MdOutlineDelete className="text-strongRed cursor-pointer text-2xl"/>
                                 </div>
                             </div>
