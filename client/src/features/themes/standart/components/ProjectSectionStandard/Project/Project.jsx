@@ -31,6 +31,7 @@ export default function Project() {
                 <div className="w-full">
                     <form className="w-full px-4 pb-4">
                         {/* Project Header information */}
+                        <h4 className="font-bold mt-4">Details</h4>
                         <div className="w-full flex flex-wrap gap-x-4">
                             {/* Project Name */}
                             <div className="mt-4">
