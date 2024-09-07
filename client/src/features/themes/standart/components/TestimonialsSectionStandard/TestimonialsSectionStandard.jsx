@@ -1,3 +1,6 @@
+import { MdAssignmentAdd } from "react-icons/md";
+import Testimonial from "./Testimonial/Testimonial";
+
 export default function TestimonialsSectionStandard() {
   return (
     <>
@@ -15,6 +18,17 @@ export default function TestimonialsSectionStandard() {
             </span>
           </label>
         </div>
+      </div>
+      {/* Add testimonial button */}
+      <button className="mt-8 flex items-center py-2 px-4 rounded-lg shadow bg-white hover:bg-gray-100 hover:text-primaryBlue">
+        <MdAssignmentAdd className="me-2 text-xl"/>
+        Add new testimonial
+      </button>
+      {/* Added Testimonials */}
+      <div className="mt-8 flex flex-col items-center">
+        <h3 className="font-bold text-xl">Testimonials</h3>
+        {/* Testimonial */}
+        <Testimonial />
       </div>
     </>
   );
