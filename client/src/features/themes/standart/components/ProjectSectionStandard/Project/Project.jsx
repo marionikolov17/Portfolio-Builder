@@ -99,6 +99,22 @@ export default function Project() {
                                 <label htmlFor="" className="text-primaryBlue text-sm font-bold mt-2 cursor-pointer">Upload a file</label>
                             </div>
                         </div>
+                        {/* Project Images */}
+                        <div className="mt-4">
+                            <h4 className="font-bold">Images</h4>
+                            <p className="text-xs text-slate-400">Up to 7 images</p>
+                            {/* Images container */}
+                            <div className="flex flex-wrap items-center mt-4">
+                                {/* Show images here */}
+                                <div className="w-32 h-28 flex overflow-hidden rounded-lg me-4 relative">
+                                    <img src="/images/zynkle-1.jpg" alt="" className="object-cover" />
+                                    <IoCloseOutline className="absolute z-40 top-0 right-0 m-2 text-xl cursor-pointer bg-white rounded-full shadow"/>
+                                </div>
+                                <label htmlFor="">
+                                    <CiCirclePlus className="text-4xl cursor-pointer hover:text-primaryBlue"/>
+                                </label>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
