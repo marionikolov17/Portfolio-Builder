@@ -42,7 +42,7 @@ export default function AboutSectionStandart() {
           </div>
           <div className="flex items-center py-2 px-4 border border-gray-700 rounded-lg text-sm mx-2 hover:bg-white cursor-pointer mb-2">
             <MdDone className="me-2 text-green-500 text-xl"/>
-            Choices
+            List
           </div>
         </div>
         {/* Different sections */}
