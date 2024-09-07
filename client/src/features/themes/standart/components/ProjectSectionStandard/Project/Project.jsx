@@ -115,6 +115,29 @@ export default function Project() {
                                 </label>
                             </div>
                         </div>
+                        {/* Project features */}
+                        <div className="mt-4">
+                            <h4 className="font-bold">Features</h4>
+                            {/* Features here */}
+                            {/* Feature */}
+                            <div className="w-full flex items-center border rounded-lg mt-2 overflow-hidden">
+                                <input 
+                                    className="outline-none px-4 py-2 grow bg-transparent"
+                                    placeholder="e.g Complex user authentication"
+                                    type="text" 
+                                />
+                                <div className="h-full w-14 flex items-center justify-center p-2">
+                                    <MdOutlineDelete className="text-strongRed cursor-pointer text-2xl"/>
+                                </div>
+                            </div>
+                            <button 
+                                type="button"
+                                className="flex items-center justify-center w-full border rounded-lg py-2 mt-2 hover:bg-gray-100 hover:text-primaryBlue"
+                            >
+                                <IoAddOutline className="me-2 text-xl"/>
+                                Add new feature
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
