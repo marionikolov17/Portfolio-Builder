@@ -163,6 +163,15 @@ export default function Project() {
                                 Add new skill
                             </button>
                         </div>
+                        {/* Project card action buttons */}
+                        <div className="mt-4 mb-2 flex items-center justify-end">
+                            <button className="me-4 py-2 text-sm">
+                                Cancel
+                            </button>
+                            <button className="py-2 px-4 bg-primaryBlue text-white rounded-lg text-sm hover:shadow">
+                                Save
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
