@@ -1,3 +1,6 @@
+import { IoAdd } from "react-icons/io5";
+import TimeItem from "./TimeItem/TimeItem";
+
 export default function CareerSectionStandard() {
   return (
     <>
@@ -15,6 +18,19 @@ export default function CareerSectionStandard() {
             </span>
           </label>
         </div>
+      </div>
+      <h3 className="font-bold text-xl text-center my-8">Timeline</h3>
+      {/* Career timeline editor */}
+      <div className="flex flex-col items-center px-4">
+        <ol className="relative border-s-4 border-gray-700 dark:border-gray-700 sm:w-[600px] max-w-[800px]">
+            {/* Time Item */}
+            <TimeItem />
+        </ol>
+        {/* Add new item button */}
+        <button className="mt-4 py-2 px-4 text-sm flex items-center bg-white rounded-lg shadow hover:text-primaryBlue hover:bg-gray-100">
+            <IoAdd className="text-lg me-2"/>
+            Add new item
+        </button>
       </div>
     </>
   );

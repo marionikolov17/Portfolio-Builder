@@ -61,7 +61,7 @@ export default function TimeItem() {
             <IoCaretDown className="ms-2" />
           </button>
           {/* Status options */}
-          <div className="hidden w-32 min-h-10 bg-white absolute z-30 -bottom-20 translate-y-1 rounded-lg">
+          <div className="hidden w-32 min-h-10 bg-white absolute z-30 -bottom-12 translate-y-2 rounded-lg">
             <button className="w-full flex h-10 items-center justify-start hover:bg-gray-100">
               <div className="w-3 h-3 bg-green-500 rounded-full mx-4"></div>
               <p className="text-sm">Success</p>
