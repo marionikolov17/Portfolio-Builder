@@ -40,7 +40,7 @@ export default function TimeItem() {
           />
         </div>
         {/* Options for item content */}
-        <div className="flex flex-wrap items-center my-3">
+        <div className="flex flex-wrap items-center my-3 gap-y-2">
           <button className="flex items-center text-sm py-2 px-4 border border-gray-700 rounded-lg me-2 hover:bg-white hover:text-primaryBlue">
             <IoAdd className="text-xl me-2" />
             Text
