@@ -1,3 +1,5 @@
+import { MdAssignmentAdd } from "react-icons/md";
+
 export default function CertificatesSectionStandard() {
   return (
     <>
@@ -16,6 +18,11 @@ export default function CertificatesSectionStandard() {
           </label>
         </div>
       </div>
+      {/* Add certificate button */}
+      <button className="mt-8 flex items-center py-2 px-4 rounded-lg shadow bg-white hover:bg-gray-100 hover:text-primaryBlue">
+        <MdAssignmentAdd className="me-2 text-xl"/>
+        Add new certificate
+      </button>
     </>
   );
 }
