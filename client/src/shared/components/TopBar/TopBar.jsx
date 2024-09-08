@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { IoMenuOutline, IoNotificationsOutline, IoSearchOutline } from "react-icons/io5";
 import LayoutContext from "../../../layouts/Layout/layout.context";
 
@@ -33,7 +34,7 @@ export default function TopBar({ pageName }) {
                         </div>
                     </div>
                     {/* Profile */}
-                    <div className="flex mx-8">
+                    <Link to="/profile" className="flex mx-6 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
                         <div className="w-12 h-12 overflow-hidden rounded-lg flex justify-center items-center">
                             <img src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725062400&semt=ais_hybrid" className="object-cover" alt="" />
                         </div>
@@ -41,7 +42,7 @@ export default function TopBar({ pageName }) {
                             <h3 className="font-bold">Mario Nikolov</h3>
                             <p className="text-sm text-slate-400"><span className="text-primaryBlue">@</span>marionikolov</p>
                         </div>
-                    </div>
+                    </Link>
                     <IoMenuOutline className="flex text-3xl cursor-pointer" onClick={() => setIsNavigationOpened(value => !value)}/>
                 </div>
             </div>
