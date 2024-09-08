@@ -1,3 +1,6 @@
+import { CiLinkedin } from "react-icons/ci";
+import { MdOutlineEmail, MdDone, MdOutlinePhone } from "react-icons/md";
+
 export default function ContactSectionStandard() {
   return (
     <>
@@ -14,6 +17,58 @@ export default function ContactSectionStandard() {
               Visible
             </span>
           </label>
+        </div>
+      </div>
+      {/* Contacts */}
+      <div className="mt-6 flex flex-col items-center sm:items-start">
+        <h3 className="font-medium text-base mb-4">Your Contacts</h3>
+        {/* Contact Input Container */}
+        <div className="flex items-center mt-2">
+          {" "}
+          {/* Email */}
+          <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
+            <MdOutlineEmail  className="ms-4 text-xl" />
+            <input
+              type="text"
+              placeholder="Enter valid email"
+              name="githubSocial"
+              className="py-2 px-4 outline-none grow text-sm"
+            />
+          </div>
+          <MdDone className="ms-2 text-xl text-green-500" />{" "}
+          {/* Show icons for validating link */}
+        </div>
+        {/* Contact Input Container */}
+        <div className="flex items-center mt-2">
+          {" "}
+          {/* Linkedin */}
+          <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
+            <CiLinkedin className="ms-4 text-xl" />
+            <input
+              type="text"
+              placeholder="Enter valid URL"
+              name="linkedinSocial"
+              className="py-2 px-4 outline-none grow text-sm"
+            />
+          </div>
+          <MdDone className="ms-2 text-xl text-green-500" />{" "}
+          {/* Show icons for validating link */}
+        </div>
+        {/* Contact Input Container */}
+        <div className="flex items-center mt-2">
+          {" "}
+          {/* Phone */}
+          <div className="flex items-center bg-white rounded-lg w-[300px] sm:w-80 overflow-x-hidden shadow-sm">
+            <MdOutlinePhone className="ms-4 text-xl" />
+            <input
+              type="phone"
+              placeholder="Enter valid phone"
+              name="instagramSocial"
+              className="py-2 px-4 outline-none grow text-sm"
+            />
+          </div>
+          <MdDone className="ms-2 text-xl text-green-500" />{" "}
+          {/* Show icons for validating link */}
         </div>
       </div>
     </>
