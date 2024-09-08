@@ -1,5 +1,6 @@
 import AboutSectionStandart from "../../features/themes/standart/components/AboutSectionStandart/AboutSectionStandart";
 import CareerSectionStandard from "../../features/themes/standart/components/CareerSectionStandard/CareerSectionStandard";
+import CertificatesSectionStandard from "../../features/themes/standart/components/CertificatesSectionStandard/CertificatesSectionStandard";
 import HeroSectionStandart from "../../features/themes/standart/components/HeroSectionStandart/HeroSectionStandart";
 import ProjectSectionStandard from "../../features/themes/standart/components/ProjectSectionStandard/ProjectSectionStandard";
 import TestimonialsSectionStandard from "../../features/themes/standart/components/TestimonialsSectionStandard/TestimonialsSectionStandard";
@@ -14,6 +15,7 @@ export default function StandartTheme() {
         <ProjectSectionStandard />
         <TestimonialsSectionStandard />
         <CareerSectionStandard />
+        <CertificatesSectionStandard />
       </div>
     </>
   );
