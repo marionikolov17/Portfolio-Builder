@@ -7,7 +7,7 @@ export default function CertificatesSectionStandard() {
       {/* Certificates Section Header */}
       <div className="w-full flex items-center bg-white rounded-lg mt-8 shadow-sm z-20">
         <div className="grow flex justify-start px-4 py-3">
-          <h2 className="sm:text-xl font-bold">Career Section</h2>
+          <h2 className="sm:text-xl font-bold">Certificates Section</h2>
         </div>
         <div className="grow flex justify-end px-4 py-3">
           <label className="inline-flex items-center cursor-pointer">
