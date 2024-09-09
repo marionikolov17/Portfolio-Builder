@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { MdDone, MdOutlineTipsAndUpdates } from "react-icons/md";
+import { GoLinkExternal } from "react-icons/go";
 import TopBar from "../../shared/components/TopBar/TopBar";
 import YourTemplateCard from "../../features/home/components/YourTemplateCard/YourTemplateCard";
 
@@ -8,6 +10,12 @@ export default function Home() {
             <section className="grow max-w-full min-h-full overflow-x-hidden">
                 <TopBar pageName={"Home"}/>
                 <div className="w-full px-3 sm:px-10">
+                    <div className="flex sm:justify-start justify-center">
+                        <Link className="mt-8 flex items-center py-2 px-4 bg-white rounded-lg shadow w-max text-sm hover:bg-gray-100">
+                            Go to portfolio
+                            <GoLinkExternal className="text-lg ms-2"/>
+                        </Link>
+                    </div>
                     {/* Portfolio link section */}
                     <h3 className="mt-8 font-bold text-xl">Portfolio Link</h3>
                     <div className="mt-2 bg-white rounded-lg shadow max-w-full sm:w-max flex items-center overflow-hidden">
