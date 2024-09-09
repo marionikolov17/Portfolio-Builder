@@ -20,7 +20,8 @@ export default function Navigation() {
                     <h1 className="ms-4 font-bold text-2xl sm:hidden lg:inline-block">MyPortfolio</h1>
                 </div>
                 {/* Buttons */}
-                <NavigationButton icon="builder" link="" text={"Builder"} isActive={true}/>
+                <NavigationButton icon="home" link="/" text={"Home"} isActive={true}/>
+                <NavigationButton icon="builder" link="/builder" text={"Builder"} isActive={false}/>
                 <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
                 <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
