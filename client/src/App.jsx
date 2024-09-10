@@ -3,6 +3,7 @@ import Builder from "./pages/Builder/Builder"
 import Layout from "./layouts/Layout/Layout"
 import Profile from "./pages/Profile/Profile"
 import Home from "./pages/Home/Home"
+import Analytics from "./pages/Analytics/Analytics"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index Component={Home}/>
           <Route path="/builder" Component={Builder}/>
+          <Route path="/analytics" Component={Analytics}/>
         </Route>
         <Route path="/profile" Component={Profile}/>
       </Routes>
