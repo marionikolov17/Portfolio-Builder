@@ -1,11 +1,14 @@
 import TopBar from "../../shared/components/TopBar/TopBar";
 
 export default function Analytics() {
-    return (
-        <>
-            <section className="grow max-w-full min-h-full overflow-x-hidden">
-                <TopBar pageName={"Analytics"}/>
-            </section>
-        </>
-    )
+  return (
+    <>
+      <section className="grow max-w-full min-h-full overflow-x-hidden">
+        <TopBar pageName={"Analytics"} />
+        <div className="w-full px-4">
+          
+        </div>
+      </section>
+    </>
+  );
 }
