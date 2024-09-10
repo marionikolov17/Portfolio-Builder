@@ -22,8 +22,8 @@ export default function Navigation() {
                 {/* Buttons */}
                 <NavigationButton icon="home" link="/" text={"Home"} isActive={true}/>
                 <NavigationButton icon="builder" link="/builder" text={"Builder"} isActive={false}/>
-                <NavigationButton icon="analytics" link="" text={"Analytics"} isActive={false}/>
-                <NavigationButton icon="settings" link="" text={"Settings"} isActive={false}/>
+                <NavigationButton icon="analytics" link="/analytics" text={"Analytics"} isActive={false}/>
+                <NavigationButton icon="settings" link="/settings" text={"Settings"} isActive={false}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
                 <div className="mb-4 flex sm:hidden lg:flex justify-center absolute bottom-0">
                     <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>
