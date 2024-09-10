@@ -28,10 +28,11 @@ export default function Analytics() {
                 <p className="text-sm text-slate-400">Last 7 days</p>
             </div>
             {/* Activity notifications */}
-            <div className="w-full mt-8">
-                <h3 className="font-bold text-xl">Activity</h3>
+            <div className="w-full mt-8 pb-4">
+                <h3 className="font-bold text-xl">Recent Activity</h3>
                 {/* <p className="mt-2">There are no activity, yet.</p> */}
                 {/* Activity messages here */}
+                <ActivityMessage />
                 <ActivityMessage />
             </div>
           </div>
