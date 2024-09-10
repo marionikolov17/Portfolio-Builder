@@ -8,7 +8,6 @@ export default function Navigation() {
     const { setIsNavigationOpened } = useContext(LayoutContext);
 
     const location = useLocation();
-    console.log(location.pathname)
 
     return (
         <>
