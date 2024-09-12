@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Settings() {
     return (
         <>
-            <section className="grow max-w-full min-h-full overflow-x-hidden">
+            <section className="grow max-w-full min-h-full overflow-x-hidden pb-4">
                 <TopBar pageName={"Settings"}/>
                 <div className="w-full px-3 sm:px-10">
                     {/* General settings section */}
