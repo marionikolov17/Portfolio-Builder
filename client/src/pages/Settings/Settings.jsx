@@ -1,3 +1,4 @@
+import { MdOutlineDangerous } from "react-icons/md";
 import TopBar from "../../shared/components/TopBar/TopBar";
 
 export default function Settings() {
@@ -6,11 +7,12 @@ export default function Settings() {
             <section className="grow max-w-full min-h-full overflow-x-hidden">
                 <TopBar pageName={"Settings"}/>
                 <div className="w-full px-3 sm:px-10">
+                    {/* General settings section */}
                     <form className="mt-8 flex flex-col">
                         <h4 className="font-bold">General Settings</h4>
                         <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
                             {/* Username input */}
-                            <div className="">
+                            <div className="w-64">
                                 <label htmlFor="username" className="block text-sm font-medium">Username</label>
                                 <input 
                                     type="text" 
@@ -55,7 +57,20 @@ export default function Settings() {
                             className="w-max mt-4 py-2 px-4 bg-primaryBlue text-white rounded-lg text-sm transition duration-300 focus:ring-2 focus:ring-primaryBlue"
                         >Save</button>
                     </form>
+                    {/* Privacy & Security section */}
                     <h4 className="font-bold mt-8">Privacy & Security</h4>
+                    <div className="mt-4 px-4 flex flex-wrap max-w-full sm:max-w-max mb-1 items-center py-2 border text-sm bg-strongRed me-2 rounded-lg text-white">
+                        <MdOutlineDangerous className="me-2 text-2xl"/>
+                        Danger: Be caution on this section!
+                    </div>
+                    <div className="flex flex-wrap gap-x-4 items-center mt-2">
+                        <button className="py-2.5 px-4 rounded-lg text-sm border-2 border-strongRed text-strongRed shadow transition duration-300 focus:ring-2 focus:ring-strongRed">
+                            Deactivate Account
+                        </button>
+                        <button className="py-2.5 px-4 rounded-lg text-sm bg-strongRed text-white shadow transition duration-300 focus:ring-2 focus:ring-strongRed">
+                            Delete Account
+                        </button>
+                    </div>
                 </div>
             </section>
         </>
