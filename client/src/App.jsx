@@ -5,6 +5,7 @@ import Profile from "./pages/Profile/Profile"
 import Home from "./pages/Home/Home"
 import Analytics from "./pages/Analytics/Analytics"
 import Settings from "./pages/Settings/Settings"
+import Login from "./pages/Login/Login"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/settings" Component={Settings}/>
         </Route>
         <Route path="/profile" Component={Profile}/>
+        <Route path="/login" Component={Login}/>
       </Routes>
     </>
   )
