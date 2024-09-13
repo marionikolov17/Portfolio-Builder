@@ -59,7 +59,7 @@ export default function Settings() {
                             className="w-max mt-4 py-2 px-4 bg-primaryBlue text-white rounded-lg text-sm transition duration-300 focus:ring-2 focus:ring-primaryBlue"
                         >Save</button>
                     </form>
-                    <Link className="text-sm block mt-2 text-primaryBlue">I've forgotten my password</Link>
+                    <Link className="text-sm block mt-2 text-primaryBlue">Change my password</Link>
                     {/* Privacy & Security section */}
                     <h4 className="font-bold mt-8">Privacy & Security</h4>
                     <div className="mt-4 px-4 flex flex-wrap max-w-full sm:max-w-max mb-1 items-center py-2 border text-sm bg-strongRed me-2 rounded-lg text-white">
