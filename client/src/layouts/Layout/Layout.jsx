@@ -4,7 +4,7 @@ import Navigation from "../../features/layout/components/Navigation/Navigation";
 import LayoutContext from "./layout.context";
 
 export default function Layout() {
-    const [isNavigationOpened, setIsNavigationOpened] = useState(true);
+    const [isNavigationOpened, setIsNavigationOpened] = useState(screen.width > 640);
 
     return (
         <LayoutContext.Provider

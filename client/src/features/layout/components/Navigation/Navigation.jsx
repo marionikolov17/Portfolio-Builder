@@ -9,6 +9,10 @@ export default function Navigation() {
 
     const location = useLocation();
 
+    const closeNavigation = () => {
+        screen.width <= 640 && setIsNavigationOpened(false);
+    };
+
     return (
         <>
             <section className="w-full sm:w-[90px] lg:w-80 h-screen shrink-0 bg-white flex flex-col items-center fixed top-0 sm:sticky z-50">
@@ -23,10 +27,10 @@ export default function Navigation() {
                     <h1 className="ms-4 font-bold text-2xl sm:hidden lg:inline-block">MyPortfolio</h1>
                 </div>
                 {/* Buttons */}
-                <NavigationButton icon="home" link="/" text={"Home"} isActive={location.pathname === "/"}/>
-                <NavigationButton icon="builder" link="/builder" text={"Builder"} isActive={location.pathname === "/builder"}/>
-                <NavigationButton icon="analytics" link="/analytics" text={"Analytics"} isActive={location.pathname === "/analytics"}/>
-                <NavigationButton icon="settings" link="/settings" text={"Settings"} isActive={location.pathname === "/settings"}/>
+                <NavigationButton icon="home" link="/" text={"Home"} isActive={location.pathname === "/"} closeNavigation={closeNavigation}/>
+                <NavigationButton icon="builder" link="/builder" text={"Builder"} isActive={location.pathname === "/builder"} closeNavigation={closeNavigation}/>
+                <NavigationButton icon="analytics" link="/analytics" text={"Analytics"} isActive={location.pathname === "/analytics"} closeNavigation={closeNavigation}/>
+                <NavigationButton icon="settings" link="/settings" text={"Settings"} isActive={location.pathname === "/settings"} closeNavigation={closeNavigation}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
                 <div className="mb-4 hidden lg:flex justify-center absolute bottom-0">
                     <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>

@@ -2,10 +2,10 @@
 import { Link } from "react-router-dom";
 import { navIcons } from "../../../../shared/data/navigation-icons";
 
-export default function NavigationButton({ isActive, link, icon, text }) {
+export default function NavigationButton({ isActive, link, icon, text, closeNavigation }) {
   return (
     <>
-      <Link to={link} className={
+      <Link onClick={closeNavigation} to={link} className={
         isActive ?
         "nav-button-active"
         :
