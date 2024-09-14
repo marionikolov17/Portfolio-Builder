@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
     const [isShownPassword, setIsShownPassword] = useState(false);
+    const [isShownRePassword, setIsShownRePassword] = useState(false);
 
     return (
         <>
@@ -18,7 +19,7 @@ export default function Register() {
                     {/* Last Step inputs */}
                     <div className="w-full flex flex-col items-center">
                         {/* Email */}
-                        <div className="mt-6 w-full">
+                        <div className="mt-4 w-full">
                             <label htmlFor="email" className="block text-sm font-bold">Email</label>
                             <input 
                                 type="email"
@@ -29,7 +30,7 @@ export default function Register() {
                             />
                         </div>
                         {/* Password */}
-                        <div className="mt-6 w-full">
+                        <div className="mt-4 w-full">
                             <label htmlFor="password" className="text-sm font-bold">Password</label>
                             <div className="flex w-full items-center bg-white border rounded-lg overflow-hidden mt-1 transition duration-300 hover:ring-2 hover:ring-primaryBlue">
                                 <input 
@@ -41,6 +42,21 @@ export default function Register() {
                                 />
                                 {!isShownPassword && <IoMdEye className="mx-3 text-xl cursor-pointer" onClick={() => setIsShownPassword(true)}/>}
                                 {isShownPassword && <IoMdEyeOff className="mx-3 text-xl cursor-pointer" onClick={() => setIsShownPassword(false)}/>}
+                            </div>
+                        </div>
+                        {/* Repeat Password */}
+                        <div className="mt-4 w-full">
+                            <label htmlFor="rePassword" className="text-sm font-bold">Repeat Password</label>
+                            <div className="flex w-full items-center bg-white border rounded-lg overflow-hidden mt-1 transition duration-300 hover:ring-2 hover:ring-primaryBlue">
+                                <input 
+                                    type={isShownRePassword ? "text" : "password"}
+                                    id="rePassword"
+                                    required
+                                    placeholder="Password..."
+                                    className="py-2 px-4 grow outline-none bg-transparent"
+                                />
+                                {!isShownRePassword && <IoMdEye className="mx-3 text-xl cursor-pointer" onClick={() => setIsShownRePassword(true)}/>}
+                                {isShownRePassword && <IoMdEyeOff className="mx-3 text-xl cursor-pointer" onClick={() => setIsShownRePassword(false)}/>}
                             </div>
                         </div>
                         <button className="mt-6 w-full py-2 flex justify-center text-sm bg-primaryBlue text-white rounded-lg shadow transition duration-300 hover:ring-1 hover:ring-primaryBlue">
