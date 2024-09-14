@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export default function Register() {
@@ -17,7 +18,7 @@ export default function Register() {
                     <h4 className="mt-4 font-bold text-lg">Welcome</h4>
                     <p className="mt-1 text-sm text-gray-400">Please enter your details to sign up</p>
                     {/* First Step inputs */}
-                    <div className="w-full flex flex-col items-center">
+                    <div className="w-full hidden flex-col items-center">
                         {/* Username */}
                         <div className="mt-4 w-full">
                             <label htmlFor="username" className="block text-sm font-bold">Username</label>
@@ -51,6 +52,65 @@ export default function Register() {
                                 className="py-2 px-4 w-full outline-none rounded-lg border mt-1 transition duration-300 focus:ring-2 focus:ring-primaryBlue"
                             />
                         </div>
+                        <button 
+                            type="button"
+                            className="mt-6 w-full py-2 flex justify-center text-sm bg-primaryBlue text-white rounded-lg shadow transition duration-300 hover:ring-1 hover:ring-primaryBlue"
+                        >
+                            Next
+                        </button>
+                    </div>
+                    {/* Second Step inputs */}
+                    <div className="w-full flex flex-col items-center">
+                        <div className="bg-primaryBlue py-2 px-4 flex items-center mt-6 rounded-lg shadow">
+                            <MdOutlineTipsAndUpdates className="me-2 text-xl text-blue-100"/>
+                            <p className="text-blue-100 text-sm">Optional Section</p>
+                        </div>
+                        {/* Interest */}
+                        <div className="mt-4 w-full">
+                            <label htmlFor="interested" className="block text-sm font-bold">I'm interested in</label>
+                            <select 
+                                id="interested" 
+                                required
+                                className="py-2 px-4 w-full outline-none rounded-lg border mt-1 transition duration-300 focus:ring-2 focus:ring-primaryBlue"
+                            >
+                                <option value="" defaultValue="">Choose</option>
+                                <option value="Front-End">Front-End Development</option>
+                                <option value="Back-End">Back-End Development</option>
+                                <option value="Mobile">Mobile Development</option>
+                                <option value="Desktop">Desktop Development</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        {/* Employment */}
+                        <div className="mt-4 w-full">
+                            <label htmlFor="employment" className="block text-sm font-bold">I'm currently</label>
+                            <select 
+                                id="employment" 
+                                required
+                                className="py-2 px-4 w-full outline-none rounded-lg border mt-1 transition duration-300 focus:ring-2 focus:ring-primaryBlue"
+                            >
+                                <option value="" defaultValue="">Choose</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                            </select>
+                        </div>
+                        {/* Years of experience */}
+                        <div className="mt-4 w-full">
+                            <label htmlFor="experienceYears" className="block text-sm font-bold">Years of experience</label>
+                            <select 
+                                id="experienceYears" 
+                                required
+                                className="py-2 px-4 w-full outline-none rounded-lg border mt-1 transition duration-300 focus:ring-2 focus:ring-primaryBlue"
+                            >
+                                <option value="" defaultValue="">Choose</option>
+                                <option value="0">0</option>
+                                <option value="1-3">1-3</option>
+                                <option value="3-5">3-5</option>
+                                <option value="5-10">5-10</option>
+                                <option value="10+">10+</option>
+                            </select>
+                        </div>
+                        <p className="mt-6 text-xs font-medium">*You are not required to share this information. It is for research purposes only!</p>
                         <button 
                             type="button"
                             className="mt-6 w-full py-2 flex justify-center text-sm bg-primaryBlue text-white rounded-lg shadow transition duration-300 hover:ring-1 hover:ring-primaryBlue"
