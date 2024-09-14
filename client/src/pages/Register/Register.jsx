@@ -60,7 +60,7 @@ export default function Register() {
                         </button>
                     </div>
                     {/* Second Step inputs */}
-                    <div className="w-full flex flex-col items-center">
+                    <div className="w-full hidden flex-col items-center">
                         <div className="bg-primaryBlue py-2 px-4 flex items-center mt-6 rounded-lg shadow">
                             <MdOutlineTipsAndUpdates className="me-2 text-xl text-blue-100"/>
                             <p className="text-blue-100 text-sm">Optional Section</p>
@@ -119,7 +119,7 @@ export default function Register() {
                         </button>
                     </div>
                     {/* Last Step inputs */}
-                    <div className="w-full hidden flex-col items-center">
+                    <div className="w-full flex flex-col items-center">
                         {/* Email */}
                         <div className="mt-4 w-full">
                             <label htmlFor="email" className="block text-sm font-bold">Email</label>
@@ -161,6 +161,7 @@ export default function Register() {
                                 {isShownRePassword && <IoMdEyeOff className="mx-3 text-xl cursor-pointer" onClick={() => setIsShownRePassword(false)}/>}
                             </div>
                         </div>
+                        <p className="mt-6 text-xs font-medium">*By signin up you agree with our <Link className="text-primaryBlue">Terms & Conditions</Link></p>
                         <button className="mt-6 w-full py-2 flex justify-center text-sm bg-primaryBlue text-white rounded-lg shadow transition duration-300 hover:ring-1 hover:ring-primaryBlue">
                             Sign up
                         </button>
