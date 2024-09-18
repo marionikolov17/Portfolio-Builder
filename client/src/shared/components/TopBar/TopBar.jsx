@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMenuOutline, IoNotificationsOutline, IoSearchOutline } from "react-icons/io5";
 import LayoutContext from "../../../layouts/Layout/layout.context";
 
 export default function TopBar({ pageName }) {
+    const [showNotifications, setShowNotifications] = useState(false);
+
     const { setIsNavigationOpened } = useContext(LayoutContext);
     return (
         <>
@@ -23,15 +25,18 @@ export default function TopBar({ pageName }) {
                 <div className="shrink-0 grow flex items-center justify-center sm:justify-end sm:px-8">
                     {/* Notifications */}
                     <div className="flex flex-col items-center h-full relative">
-                        <div className="relative p-3 bg-secondaryYellow hover:bg-gray-100 rounded-lg cursor-pointer">
+                        <div
+                            onClick={() => setShowNotifications(value => !value)} 
+                            className="relative p-3 bg-secondaryYellow hover:bg-gray-100 rounded-lg cursor-pointer"
+                        >
                             <div className="absolute right-0 top-0 m-2 w-2 h-2 bg-strongRed rounded-full"></div>
                             <IoNotificationsOutline className="text-supportingYellow text-2xl"/>
                         </div>
-                        <div className="hidden absolute -bottom-10 left-0 sm:left-auto w-52 min-h-8 bg-gray-100 rounded-lg shadow-sm">
+                        {showNotifications && <div className="absolute -bottom-10 left-0 sm:left-auto w-52 min-h-8 bg-gray-100 rounded-lg shadow-sm">
                             <div className="flex min-h-8 items-center justify-center">
                                 <p className="text-sm font-bold">You've got new visitors!</p>
                             </div>
-                        </div>
+                        </div>}
                     </div>
                     {/* Profile */}
                     <Link to="/profile" className="flex mx-6 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
