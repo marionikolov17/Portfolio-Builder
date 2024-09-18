@@ -1,3 +1,4 @@
+import ChangePasswordContainer from "../../features/profile/components/ChangePasswordContainer/ChangePasswordContainer";
 import ProfileInfo from "../../features/profile/components/ProfileInfo/ProfileInfo";
 import TopBar from "../../shared/components/TopBar/TopBar";
 
@@ -11,7 +12,9 @@ export default function Profile() {
             {/* Profile Info */}
             <ProfileInfo />
           </div>
-          <div className="grow"></div>
+          <div className="grow">
+            <ChangePasswordContainer />
+          </div>
         </div>
       </section>
     </>
