@@ -4,7 +4,6 @@ import Layout from "./layouts/Layout/Layout"
 import Profile from "./pages/Profile/Profile"
 import Home from "./pages/Home/Home"
 import Analytics from "./pages/Analytics/Analytics"
-import Settings from "./pages/Settings/Settings"
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register"
 import Landing from "./pages/Landing/Landing"
@@ -18,7 +17,6 @@ function App() {
           <Route index Component={Home}/>
           <Route path="/builder" Component={Builder}/>
           <Route path="/analytics" Component={Analytics}/>
-          <Route path="/settings" Component={Settings}/>
           <Route path="/profile" Component={Profile}/>
         </Route>
         <Route path="/login" Component={Login}/>
