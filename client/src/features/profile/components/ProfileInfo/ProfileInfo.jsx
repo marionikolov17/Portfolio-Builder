@@ -1,7 +1,7 @@
 export default function ProfileInfo() {
   return (
     <>
-      <div className="w-96 h-max bg-white rounded-lg shadow">
+      <div className="w-full sm:w-96 h-max bg-white rounded-lg shadow">
         {/* Profile Image */}
         <div className="flex justify-center mt-4">
           <div className="w-32 h-32 flex overflow-hidden rounded-full">
