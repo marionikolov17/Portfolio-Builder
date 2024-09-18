@@ -9,7 +9,6 @@ export default function Profile() {
         <TopBar pageName={"Profile"} />
         <div className="mt-8 w-full flex flex-wrap px-4 gap-y-2">
           <div className="grow flex justify-center sm:w-auto w-full">
-            {/* Profile Info */}
             <ProfileInfo />
           </div>
           <div className="grow">
