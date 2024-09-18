@@ -30,7 +30,6 @@ export default function Navigation() {
                 <NavigationButton icon="home" link="/" text={"Home"} isActive={location.pathname === "/"} closeNavigation={closeNavigation}/>
                 <NavigationButton icon="builder" link="/builder" text={"Builder"} isActive={location.pathname === "/builder"} closeNavigation={closeNavigation}/>
                 <NavigationButton icon="analytics" link="/analytics" text={"Analytics"} isActive={location.pathname === "/analytics"} closeNavigation={closeNavigation}/>
-                <NavigationButton icon="settings" link="/settings" text={"Settings"} isActive={location.pathname === "/settings"} closeNavigation={closeNavigation}/>
                 <NavigationButton icon="logout" link="" text={"Sign Out"} isActive={false}/>
                 <div className="mb-4 hidden lg:flex justify-center absolute bottom-0">
                     <p className="font-bold text-sm">Created by <Link to="https://www.marionikolovdev.com">Mario Nikolov</Link>©</p>
