@@ -1,4 +1,5 @@
 import ChangePasswordContainer from "../../features/profile/components/ChangePasswordContainer/ChangePasswordContainer";
+import DangerZone from "../../features/profile/components/DangerZone/DangerZone";
 import ProfileInfo from "../../features/profile/components/ProfileInfo/ProfileInfo";
 import TopBar from "../../shared/components/TopBar/TopBar";
 
@@ -13,6 +14,7 @@ export default function Profile() {
           </div>
           <div className="grow">
             <ChangePasswordContainer />
+            <DangerZone />
           </div>
         </div>
       </section>
