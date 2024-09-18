@@ -8,7 +8,7 @@ export default function ChangePasswordContainer() {
 
   return (
     <>
-      <div className="w-96 h-max bg-white rounded-lg shadow p-4">
+      <div className="w-full sm:w-96 h-max bg-white rounded-lg shadow p-4">
         <h4 className="font-bold">Change Password</h4>
         <form className="w-full flex flex-col">
           {/* Old Password */}
