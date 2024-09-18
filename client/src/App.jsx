@@ -19,8 +19,8 @@ function App() {
           <Route path="/builder" Component={Builder}/>
           <Route path="/analytics" Component={Analytics}/>
           <Route path="/settings" Component={Settings}/>
+          <Route path="/profile" Component={Profile}/>
         </Route>
-        <Route path="/profile" Component={Profile}/>
         <Route path="/login" Component={Login}/>
         <Route path="/register" Component={Register}/>
         <Route path="/landing" Component={Landing}/>
