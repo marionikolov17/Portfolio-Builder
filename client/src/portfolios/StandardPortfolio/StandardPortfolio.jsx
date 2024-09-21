@@ -3,6 +3,7 @@ import DesktopNavigation from "./components/DesktopNavigation/DesktopNavigation"
 import HeroSection from "./components/HeroSection/HeroSection";
 import MobileNavigation from "./components/MobileNavigation/MobileNavigation";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 export default function StandardPortfolio() {
     return (
@@ -13,6 +14,7 @@ export default function StandardPortfolio() {
                 <HeroSection />
                 <AboutSection />
                 <ProjectsSection />
+                <Testimonials />
                 <div className="fixed top-0 w-full h-full paper-bg -z-10"></div>
             </main>
         </>
