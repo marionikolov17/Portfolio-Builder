@@ -14,7 +14,10 @@ export default {
         primaryGray: "#F9FAFB",
         supportingYellow: "#FFA412",
         secondaryYellow: "#FFFAF1",
-        strongRed: "#EB5757"
+        strongRed: "#EB5757",
+        standardPrimary: "#121212",
+        standardGreen: "#06a94d",
+        standardText: "#fff"
       },
       fontFamily: {
         montserrat: "'Montserrat', sans-serif",
