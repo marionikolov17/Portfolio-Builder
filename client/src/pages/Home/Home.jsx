@@ -11,7 +11,7 @@ export default function Home() {
                 <TopBar pageName={"Home"}/>
                 <div className="w-full px-3 sm:px-10">
                     <div className="flex sm:justify-start justify-center">
-                        <Link className="mt-8 flex items-center py-2 px-4 bg-white rounded-lg shadow w-max text-sm hover:bg-gray-100">
+                        <Link to="/portfolio/some" className="mt-8 flex items-center py-2 px-4 bg-white rounded-lg shadow w-max text-sm hover:bg-gray-100">
                             Go to portfolio
                             <GoLinkExternal className="text-lg ms-2"/>
                         </Link>
