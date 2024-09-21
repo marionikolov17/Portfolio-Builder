@@ -7,6 +7,7 @@ import Analytics from "./pages/Analytics/Analytics"
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register"
 import Landing from "./pages/Landing/Landing"
+import Portfolio from "./pages/Portfolio/Portfolio"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" Component={Login}/>
         <Route path="/register" Component={Register}/>
         <Route path="/landing" Component={Landing}/>
+        <Route path="/portfolio/:name" Component={Portfolio}/>
       </Routes>
     </>
   )
