@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection/AboutSection";
+import CareerSection from "./components/CareerSection/CareerSection";
 import DesktopNavigation from "./components/DesktopNavigation/DesktopNavigation";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MobileNavigation from "./components/MobileNavigation/MobileNavigation";
@@ -15,6 +16,7 @@ export default function StandardPortfolio() {
                 <AboutSection />
                 <ProjectsSection />
                 <Testimonials />
+                <CareerSection />
                 <div className="fixed top-0 w-full h-full paper-bg -z-10"></div>
             </main>
         </>
