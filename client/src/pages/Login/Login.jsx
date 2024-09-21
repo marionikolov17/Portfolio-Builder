@@ -51,7 +51,7 @@ export default function Login() {
                     <button className="mt-6 w-full py-2 flex justify-center text-sm bg-primaryBlue text-white rounded-lg shadow transition duration-300 hover:ring-1 hover:ring-primaryBlue">
                         Sign in
                     </button>
-                    <p className="text-sm mt-6">Don't have an account yet? <Link className="text-primaryBlue font-medium">Sign Up</Link></p>
+                    <p className="text-sm mt-6">Don't have an account yet? <Link to="/register" className="text-primaryBlue font-medium">Sign Up</Link></p>
                 </form>
             </main>
         </>
