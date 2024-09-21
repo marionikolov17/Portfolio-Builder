@@ -3,6 +3,7 @@ import CareerSection from "./components/CareerSection/CareerSection";
 import Certificates from "./components/Certificates/Certificates";
 import ContactSection from "./components/ContactSection/ContactSection";
 import DesktopNavigation from "./components/DesktopNavigation/DesktopNavigation";
+import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MobileNavigation from "./components/MobileNavigation/MobileNavigation";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
@@ -21,6 +22,7 @@ export default function StandardPortfolio() {
                 <CareerSection />
                 <Certificates />
                 <ContactSection />
+                <Footer />
                 <div className="fixed top-0 w-full h-full paper-bg -z-10"></div>
             </main>
         </>
