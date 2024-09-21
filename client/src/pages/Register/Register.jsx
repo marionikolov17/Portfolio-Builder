@@ -185,7 +185,7 @@ export default function Register() {
                             <p className="font-medium">3</p>
                         </div>
                     </div>
-                    <p className="text-sm mt-6">Already have an account? <Link className="text-primaryBlue font-medium">Sign In</Link></p>
+                    <p className="text-sm mt-6">Already have an account? <Link to="/login" className="text-primaryBlue font-medium">Sign In</Link></p>
                 </form>
             </main>
         </>
